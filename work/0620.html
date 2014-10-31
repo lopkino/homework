@@ -1,0 +1,75 @@
+<!DOCTYPE html
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+* { margin: 0; padding: 0 }
+.nav .all { background: #F60; width: 210px; }
+.nav .all #goods:hover { background-color: #9F0; text-decoration: underline; }
+.nav ul li a:hover { background-color: #09F; }
+.nav { height: 40px; width: 1210px; background-color: #0CF; margin: 100px auto; position: relative }
+.nav ul li { list-style: none; float: left; line-height: 40px; }
+.nav ul li a { font-size: 14px; text-decoration: none; color: #FFF; font-family: "微软雅黑"; font-weight: bold; padding: 0 25px 0 25px; display: block; }
+.nav .sel { background: #09F; }
+.nav .gif { position: absolute; right: 200px }
+.youku { width: 860px; height: 180; border: 1px solid #CCC; margin: 150px auto; }
+
+.youku ul li { list-style: none; float: left; height: 30px }
+.youku ul li a { line-height: 30px; text-decoration: none; font-size: 14px; font-family: "微软雅黑"; color: #999; font-weight: bold; padding: 0 20px 0 20px; display: block; }
+
+/*.youku ul li a:hover { background-color: #06F; color: #FFF; }*/
+.youku ul .xuan a{ background-color: #06F; color:#FFF;}
+
+.youku .show { width: 860px; height: 150px; clear:both; display:none;}
+.youku .chi { background: #CF9; display:block}
+.youku .he { background: #F0F; }
+.youku .wan { background: #066; }
+.youku .ni { background: #F06; }
+</style>
+</head><body>
+<div class="nav">
+  <ul>
+    <li class="all"> <a href="#" id="goods">全部分类</a> </li>
+    <li> <a href="#" class="sel">首页</a> </li>
+    <li> <a href="#">服饰</a> </li>
+    <li> <a href="#">蔬菜</a> </li>
+    <li> <a href="#">水果</a> </li>
+    <li> <a href="#">海鲜</a> </li>
+    <li> <a href="#">海鲜</a> </li>
+    <li> <a href="#">海鲜</a> </li>
+  </ul>
+  <div class="gif"> <a href="#"> <img src="../images/5429905_10.jpg"  alt="ad" width="100" height="40"/> </a></div>
+</div>
+<br />
+<br />
+<br />
+<div class="youku">
+  <ul>
+    <li class="xuan"> <a href="#" >好吃的</a></li>
+    <li> <a href="#">好喝的</a></li>
+    <li> <a href="#">好玩的</a></li>
+    <li> <a href="#">你懂得</a></li>
+  </ul>
+  <div class="show chi"><h1>好吃啊!!!!!</h1></div>
+  <div class="show he"><h1>好喝啊!!!!!</h1></div>
+  <div class="show wan"><h1>好玩啊!!!!</h1></div>
+  <div class="show ni"><h1>真不懂!!!!</h1></div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".youku").find("li").hover(function(){
+				$(this).addClass("xuan").siblings().removeClass("xuan");
+				$(".show").hide().eq($(this).index()).show();
+			});
+	});
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>九九乘法</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style type="text/css">
+	table td{border:1px solid #ccc;padding: 5px;}
+</style>
+<body>
+	<h1>九九乘法表</h1>
+	<input type="text" id="number"><input type="button" onclick="tm_change(this)" value="计算">
+	<hr>
+	<div id="box1"></div>
+
+    <script type="text/javascript">
+    chengfabiao(9);
+    function chengfabiao (number) {
+    	var html = "<table>";
+    	for (var i=1;i<=number; i++) {
+    		html +="<tr>";
+    		for(var j=1;j<=i;j++){
+    			html +="<td>"+i+" x "+j+" = "+(i*j)+"</td>";
+    		}	
+    		html +="</tr>";
+		}
+		html += "</table>";
+
+    	document.getElementById("box1").innerHTML = html;
+    }
+    function tm_change (obj) {
+    	var number = document.getElementById("number").value;
+    	if(number=="")return;
+    	chengfabiao(number);
+    };
+    </script>
+
+</body>
+</html>

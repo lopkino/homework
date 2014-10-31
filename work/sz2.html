@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+.nav { width: 900px; height: 36px; margin: 150px auto; border-bottom: 3px solid #CCC; position: relative }
+.nav ul li { list-style: none; float: left; width: 98px; height: 30px; text-align: center; line-height: 30px; }
+.nav ul li a { text-decoration: none; color: #000; font-size: 16px; }
+.nav .cursor { width: 98px; border-bottom: 3px solid #000; position: absolute; left: 0; bottom: -3px; }
+</style>
+</head>
+
+<body>
+<div class="nav">
+  <ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">好吃的</a></li>
+    <li><a href="#">好喝的</a></li>
+    <li><a href="#">好玩的</a></li>
+    <li><a href="#">你懂得</a></li>
+    <li><a href="#">真好吃</a></li>
+    <li><a href="#">真好喝</a></li>
+    <li><a href="#">真好玩</a></li>
+    <li><a href="#">真不懂</a></li>
+  </ul>
+  <p class="cursor"></p>
+</div>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".nav").find("li").hover(function(){
+			var auto_left =($(window).width() - 900) / 2;
+			var _left = $(this).offset().left - auto_left;
+			$(".nav").find(".cursor").animate({left:_left},100);
+		});
+	});
+</script>
+
+
+</body>
+</html>

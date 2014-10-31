@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	font-family: "微软雅黑"; font-size:12px;color:#666;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.clear {clear:both}
+.top {
+	width: 100%;
+	background: #000;
+	height: 76px;
+	position:fixed;
+	z-index:100;
+	top: 0;
+	left: 0;
+}
+.top .header {
+	width: 1198px;
+	height: 76px;
+	margin: 0 auto;
+}
+.top .header .logo {
+	margin-top: 14px;
+	float: left
+}
+.top .header .nav {
+	margin-left: 56px;
+	float: left
+}
+.top .header .nav ul li {
+	float: left;
+	list-style: none;
+	height: 76px;
+}
+.top .header .nav ul li a {
+	display: block;
+	line-height: 76px;
+	padding: 0 20px;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.top .header .nav ul li a:hover {
+	background: #999;
+}
+.top .header .nav ul li .sel {
+	background: #999;
+}
+.nav ul .he {
+	position: relative;
+}
+.nav ul .he .navtip {
+	position: absolute;
+	top: -19px;
+	left: 36px;
+	z-index: 3;
+	visibility: visible;
+}
+.nav .navbbs {
+	background: #666;
+	position: absolute;
+	top: 76px;
+	z-index: 2;
+	visibility: hidden;
+}
+.top .header .nav .navbbs a {
+	height: 35px;
+	width: 130px;
+	line-height: 35px;
+}
+.top .header .nav .he:hover .navbbs {
+	visibility: visible;
+}
+.top .header .Tel {
+	color: #FFF;
+	font-size: 22px;
+	padding: 22px 0 0 20px;
+	float: right;
+	font-weight: bold;
+}
+.top .header .share a {
+	display: block;
+	width: 38px;
+	height: 38px;
+	float: right;
+	margin: 20px 5px 0 0;
+	overflow: hidden;
+	position: relative
+}
+.top .header .share a span {
+	display: block;
+	width: 30px;
+	height: 80px;
+	background: url(../images/share.png) no-repeat;
+	overflow: hidden;
+	position: absolute
+}
+.top .header .share .sina {
+	background-position: 3px 6px;
+}
+.top .header .share .tx {
+	background-position: -42px 6px;
+}
+.top .header .share .QQ {
+	background-position: -83px 6px;
+}
+
+.course-list{ width:100%; margin-top: 76px;}
+.course-list .c-all{ width:1198px;margin:auto;border: 1px solid #e8e8e8;margin-top: 100px;margin-bottom: 30px;}
+.c-a-left { width:241px;background:#f6f6f6; float:left;}
+.c-a-left ul{background:#f6f6f6;height:895px;}
+.c-a-left ul li { list-style:none; border-bottom:1px solid #fff
+; width:210px; height:55px; line-height:55px; font-size:14px; font-weight:bold; padding-left:30px; cursor:pointer;border-top: 1px solid #e8e8e8;}
+.c-a-left ul li:hover{ color:#000; background:#FFF; border-left:3px solid #000}
+.c-a-left .selt{ color:#000; background:#FFF; border-left:3px solid #000}
+.c-a-right{float:left;}
+.c-a-right .c-a-right-show{width:957px; height:895px; display:none}
+.c-a-right .c-soft1{display:block}
+.c-a-right .c-soft2{}
+.c-a-right .c-soft3{}
+.c-a-right .c-soft4{}
+.c-a-right-show-hot { width:957px;}
+.c-a-right-show-hot ul li{ background:#fff; list-style:none; width:281; height:260; float:left; margin: 13px 0 0 25px; padding: 20px 7px 21px 10px;}
+.c-a-right-show-hot ul li p span{ display:block; font-size:14px;}
+.c-a-right-show-hot ul li:hover{ background:#DFDFDF}
+.footer {width:100%; background:#000; padding:20px 0;}
+.footer .copy{ width:967px; height:50px; margin:0 auto;}
+.footer .copy .alogo{ width:50px; height:50px; background:url(http://www.mooncollege.cn/images/main/foot-logo.png) no-repeat; display:block; float:left;}
+.footer .copy .alogo:hover{ background:url(http://www.mooncollege.cn/images/main/foot-logo-hover.png) no-repeat;}
+.footer .copy p { margin-left:15px; float:left; line-height:25px}
+.footer .copy p a{ margin:0 8px;}
+.footer .copy span{ display:block;}
+.footer a { text-decoration:none; color:#666;}
+
+</style>
+</head>
+
+<body>
+<div class="top">
+  <div class="header">
+    <div class="logo"> <img src="#" width="158px" height="52px"/></div>
+    <div class="nav">
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">好吃的</a></li>
+        <li><a href="#">好喝的</a></li>
+        <li><a href="#">好玩的</a></li>
+        <li><a href="#">真好吃</a></li>
+        <li><a href="#">真好玩</a></li>
+        <li class="he"> <a href="#">真好喝</a>
+          <div class="navbbs"> <span class="navtip"> <img src="../images/jebhAW6Vx_02.png" width="8px" height="4px"/> </span> <a href="#">真1玩</a> <a href="#">真2玩</a> <a href="#">真3玩</a> <a href="#">真4玩</a> </div>
+        </li>
+      </ul>
+    </div>
+    <div class="Tel">400-100-1111 </div>
+    <div class="share"> <a href="#"><span class="QQ"></span></a> <a href="#"><span class="tx"></span></a> <a href="#"><span class="sina"></span></a> </div>
+  </div>
+ <div class="clear"></div>
+</div>
+<div class="course-list">
+	<div class="c-all">
+    	<div class="c-a-left">
+        	<ul>
+            	<li class="selt">编程开发1</li>
+                <li>编程开发2</li>
+                <li>编程开发3</li>
+                <li>编程开发4</li>
+            </ul>
+        </div>
+        <div class="c-a-right">
+        	<div class="c-a-right-show c-soft1">
+            <div class="c-a-right-show-hot">
+	<ul>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/tb.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/html5.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/seo267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/web267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>        
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>                                                
+    </ul>
+    <div class="clear"></div>
+</div>
+            </div>
+            <div class="c-a-right-show c-soft2">
+            <div class="c-a-right-show-hot">
+	<ul>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/ty.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/js267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/ps267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>        
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>                                                
+    </ul>
+    <div class="clear"></div>
+</div>
+            </div>
+            <div class="c-a-right-show c-soft3">
+            <div class="c-a-right-show-hot">
+	<ul>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/tb.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/ty.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/html5.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>        
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>                                                
+    </ul>
+    <div class="clear"></div>
+</div>
+            </div>
+            <div class="c-a-right-show c-soft4">
+            <div class="c-a-right-show-hot">
+	<ul>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/js267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/seo267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>        
+    	<li>
+        	<img src="http://www.mooncollege.cn/images/main/java267.png" alt="" width="267" height="151"/>
+            <p>
+            	<span>课题：Java零基础到项目实战特训</span>
+                <span>讲师:arry</span>
+                <span>学生:11131</span>
+            </p>
+        </li>                                                
+    </ul>
+    <div class="clear"></div>
+</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="footer">
+	<div class="copy">
+    	<a href="#" class="alogo"></a>
+        <p class="wmwm">
+        <a href="#">关于我们</a>|<a href="#">加入我们</a>|<a href="#">联系我们</a>
+        <span>Copyright © 2013-2014 www.mooncollege.cn All Rights Reserved版权所有：湖南潭州教育咨询有限公司 备案号：备13016338号</span>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script> 
+<script type="text/javascript"> 
+$(".share a").each(function(index) {
+        $(this).hover(function(){
+			if(index == 0){
+				$(this).css({"background-color":"#f75454"});
+				}
+			else if (index == 1){
+			$(this).css({"background-color":"#0e71b7"});
+			}
+			else if (index == 2){
+			$(this).css({"background-color":"#666"});
+			}
+			$(this).css({"border-radius":4});
+			$(this).find("span").stop();
+			$(this).find("span").animate({"top":-49},"normal");
+		},function(){
+			var _this = $(this);
+			$(this).find("span").animate({"top":0},"normal",function(){
+				_this.css({"background":"none"})
+				});
+			});
+    });
+	
+$(function(){
+		$(".c-a-left").find("li").hover(function(){
+			$(this).addClass("selt").siblings().removeClass("selt");
+			$(".c-a-right-show").eq($(this).index()).show().siblings().hide();
+		});
+	});
+
+    </script>
+</body>
+</html>

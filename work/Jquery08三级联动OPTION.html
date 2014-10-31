@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>动态给select框添加option</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <select id="province"></select>
+
+    <script type="text/javascript">
+   		 tm_init_province();
+    	function tm_init_province(){
+    		var selectDom = document.getElementById("province");
+    		var arr = ["湖南省","河南省","山东省","山西省","河北省"];
+    		var html = "<option value=''>请选择</option>";
+    		for (var i = 0; i < arr.length; i++) {
+    			html +="<option value = "+arr[i]+">"+arr[i]+"</option>";
+    		}
+    		selectDom.innerHTML = html;
+    	}
+    	
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>点击隐藏与显示</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style type="text/css">
+	#box .items{border: 5px solid #ccc; }
+</style>
+<body>
+<div id="box">
+	<div class="items"><img src="../images/s9762181_12f4921b390g215.gif"></div>
+</div>
+<input type="button" onclick="tm_showhide(this)" value="隐藏">
+<script type="text/javascript">
+	
+
+	function tm_showhide(obj){
+		var value = obj.value;
+		var boxDom = document.getElementById("box");
+		if (value=="隐藏") {
+			boxDom.style.display = "none"
+			obj.value = "显示"
+		}else{
+			boxDom.style.display = "block"
+			obj.value = "隐藏"
+		};
+	}
+</script>
+</body>
+</html>

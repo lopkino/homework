@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>document.getElementById</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+    var divshiwu = document.createElement("div");
+    divshiwu.innerHTML = "这是一个DIV";
+    divshiwu.style.width="400px";
+    divshiwu.style.height="300px";
+    divshiwu.style.background="green";
+    document.body.appendChild(divshiwu);
+
+    var shiwuspan = document.createElement("span");
+    divshiwu.appendChild(shiwuspan);
+
+    var shiwup = document.createElement("p");
+    divshiwu.appendChild(shiwup);
+    </script>
+</body>
+</html>
