@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>javascript-Throw-Try-Catch</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+
+<style type="text/css">
+	
+</style>
+
+</head>
+
+<body>
+<input type="text" id="txt">
+<input type="button" value="click" onclick="numberr();">
+<p id="mess"></p>
+    <script type="text/javascript">
+
+	function numberr(){
+		try{
+			var txt_val = document.getElementById("txt").value;
+			if(txt_val == ""){
+				throw"空空空";
+			}else if(isNaN(txt_val)){
+				throw"NOT A NUMBER";
+			}else if(txt_val < 100){
+				throw "小于100";
+			}else if(txt_val > 100){
+				throw "大于100";
+			}
+		}catch(err){
+			document.getElementById("mess").innerHTML = "错误信息:"+err;
+		}
+	}    	
+
+    </script>
+    
+</body>
+</html>
